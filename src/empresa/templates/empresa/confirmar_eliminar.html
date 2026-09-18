@@ -1,0 +1,6 @@
+<h2>¿Confirmas la eliminación del producto "{{ producto.nombre }}"?</h2>
+<form method="POST">
+    {% csrf_token %}
+    <button type="submit">Sí, Eliminar</button>
+    <a href="{% url 'lista_productos_empresa' %}">Cancelar</a>
+</form>
